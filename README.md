@@ -1,2 +1,3 @@
-# web-starter-kit
-gulp4 를 이용한 스타터킷
+# Web Starter Kit
+
+Gulp4로 작성된 HTML, SCSS, JS, Image, Fonts 를 포함하는 웹스타터킷 입니다.
