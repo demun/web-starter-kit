@@ -1,0 +1,24 @@
+.animate {
+    background-color: #ddd;
+    width: 600px;
+    display: inline-block;
+    
+    @include animate(#ff3300 500px);
+
+    &:hover {
+        color: #333;
+    }
+}
+
+.triangle {
+    @include triangle(12px, gray, down);
+}
+
+.foo {
+    @include size(10em);
+    background-color: #ddd;
+}
+
+.parent {
+    @include v-align(250px);
+}

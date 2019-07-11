@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    @@include('../partials/head/head.html', { "title": "bootstrap", "path": "../.." })
+
+</head>
+
+<body>
+
+    <!-- @@include('../partials/components/ex1/bootstrap.html') -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h1 class="bd-title">Alerts</h1>
+                <div class="bd-example">
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                    </div>
+                </div>
+
+                <h3>Dismissing</h3>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <h1 class="bd-title">Badges</h1>
+                <div class="bd-example">
+                    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+                    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                </div>
+
+                <div class="bd-example">
+                    <button type="button" class="btn btn-primary">
+                        Notifications <span class="badge badge-light">4</span>
+                    </button>
+                </div>
+
+
+                <div class="bd-example">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-light">Light</span>
+                </div>
+
+                <div class="bd-example">
+                    <span class="badge badge-pill badge-primary">Primary</span>
+                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-success">Success</span>
+                    <span class="badge badge-pill badge-danger">Danger</span>
+                    <span class="badge badge-pill badge-warning">Warning</span>
+                    <span class="badge badge-pill badge-info">Info</span>
+                    <span class="badge badge-pill badge-light">Light</span>
+                    <span class="badge badge-pill badge-dark">Dark</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    @@include('../partials/head/js.html', { "path": "../.." })
+</body>
+
+</html>

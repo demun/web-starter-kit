@@ -1,0 +1,61 @@
+/* button 
+================================================== */
+
+
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    color: $btn-font-color;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: $btn-padding-y $btn-padding-x;
+    font-size: $btn-font-size;
+    line-height: $btn-line-height;
+    border: 1px solid $btn-border-color;
+    background-color: $btn-bg-color;
+
+    transition: $btn-transition;
+
+    &:hover {
+        color: $btn-font-color;
+        text-decoration: none;
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+        box-shadow: $btn-focus-box-shadow;
+    }
+
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+        opacity: .65;
+        box-shadow: none;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        box-shadow: 0 0 0 .2rem rgba(0,0,0, .5);
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba(0,0,0, .5);
+        }
+    }
+
+    // color
+    &.btn-active {
+        color: $btn-active-color;
+        background-color: $btn-active-bg;
+        border-color: $btn-active-border-color;
+    }
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
+}
