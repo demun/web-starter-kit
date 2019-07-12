@@ -3,18 +3,20 @@
  */
 'use strict';
 
-const gulp        = require('gulp'),
-      fileinclude = require('gulp-file-include')
+const gulp = require('gulp'),
+    fileinclude = require('gulp-file-include'),
+    prettify = require('gulp-prettify');
 
-module.exports = function(options) {
+module.exports = function (options) {
 
-  return function() {
-    return gulp.src(`./${options.templates}/**/*.html`)
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: `./${options.templates}`
-    }))
-    .pipe(gulp.dest(options.dest));
-  };
+    return function () {
+        return gulp.src(`./${options.templates}/**/*.html`)
+            .pipe(fileinclude({
+                prefix: '@@',
+                basepath: `./${options.templates}`
+            }))
+            .pipe(prettify())
+            .pipe(gulp.dest(options.dest));
+    };
 
 };
